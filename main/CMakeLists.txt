@@ -1,0 +1,31 @@
+idf_component_register(
+    SRCS
+        "board.c"
+        "ethernet.c"
+        "http_client.c"
+        "json_writer.c"
+        "main.c"
+        "mbap.c"
+        "modbus_client.c"
+        "modbus_server.c"
+        "register.c"
+        "spi_bus.c"
+        "tcp_client.c"
+        "tcp_server.c"
+        "w5500.c"
+        "w5500_socket.c"
+    INCLUDE_DIRS
+        "."
+    REQUIRES
+        driver
+        esp_app_format
+        esp_eth
+        esp_event
+        esp_http_client
+        esp_netif
+        esp_system
+        esp_timer
+        freertos
+        log
+        mbedtls
+)
