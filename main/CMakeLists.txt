@@ -22,10 +22,12 @@ idf_component_register(
         esp_eth
         esp_event
         esp_http_client
+        esp_http_server
         esp_netif
         esp_system
         esp_timer
         freertos
         log
         mbedtls
+        nvs_flash
 )
